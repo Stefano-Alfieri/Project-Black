@@ -1,0 +1,180 @@
+/* FONT E INIZIO CSS PERSONALE*/
+*{
+    font-family: 'Jura', sans-serif;
+    color: white;
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 55px;
+}
+
+body{
+    background-color: black;
+}
+
+:root{
+    --colorblue: #2b9df4;
+}
+
+.color-custom{
+    color:var(--colorblue);
+}
+
+/* INIZIO CSS NAVBAR */
+.nav-custom{
+    height: 65px;
+    border-bottom: 2px solid white ;
+}
+/* FINE CSS NAVBAR */
+
+/* INIZIO CSS HEADER */
+.bg-header{
+    margin-top: 65px;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)),url(./media/moon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    animation-name: arrow-down;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow-down {
+    from {opacity: 0;bottom: 20%;}
+    to {opacity: 1; bottom: 0%;}
+}
+
+/* FINE CSS HEADER */
+
+/* INIZIO CSS MAIN */
+
+/* INIZIO CSS PRIMA SECTION */
+
+.number-custom{
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.card-custom{
+    width: 300px;
+    border-bottom: 2px solid var(--colorblue);
+    text-align: center;
+}
+
+/* FINE CSS PRIMA SECTION */
+
+/* INIZIO CSS SECONDA SECTION */
+
+.margin-custom{
+    margin-top: 300px;
+}
+
+.bg-custom{
+    background: url(./media/moon2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+/* FINE CSS SECONDA SECTION */
+
+/* INIZIO CSS TERZA SECTION */
+
+h5,p{
+    color:white !important;
+}
+
+.b-bottom-custom{
+    display: flex;
+    border-bottom: 1px solid var(--colorblue);
+}
+
+.icon-custom{
+    font-size: 22px;
+    color: var(--colorblue);
+    padding-right: 10px;
+}
+
+/* FINE CSS TERZA SECTION */
+
+/* INIZIO CSS QUARTA SECTION */
+
+.bg-img{
+    background: url(./media/missile-2027068_1280.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* FINE CSS QUARTA SECTION */
+
+/* INIZIO CSS QUINTA SECTION*/
+
+.btn-custom{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    border: 3px solid var(--colorblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-custom::before, .btn-custom::after{
+    position: absolute;
+    content: '';
+}
+
+.btn-custom::before{
+    width: 120px;
+    height: 50px;
+    border:3px solid black;
+}
+
+.btn-custom::after{
+    width: 150px;
+    height: 25px;
+    border: 3px solid black;
+}
+
+/* PER SCHERMI PICCOLI E MEDI */
+@media screen and (max-width:1023px) {
+    .btn-custom::before{
+        border: 5px solid black;
+        height: 53px;
+    }
+
+    .btn-custom::after{
+        border: 5px solid black;
+        width: 153px;
+    }   
+}
+
+/* FINE CSS QUINTA SECTION */
+
+/* INIZIO CSS FOOTER */
+
+.bg-footer{
+    margin-top: 250px;
+    background: url(./media/sunrise-1765027_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.border-custom{
+    border-bottom:5px solid transparent;
+    border-image: linear-gradient(90deg, rgba(0,0,0,0.9) 25%, rgba(43, 157, 244,1) 50%, rgba(0,0,0,0.9) 75%);
+    border-image-slice: 1;
+}
+/* FINE CSS FOOTER */
